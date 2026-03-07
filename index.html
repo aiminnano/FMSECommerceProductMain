@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style/style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,300&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<div id="container">
+  <header>
+    <div class="container-logo-menu">
+      <img src="./images/icon-menu.svg" alt="" class="mobile-menu-button">
+      <div class="logo"><img src="./images/logo.svg" alt=""></div>
+      <div class="menu desktop-menu">
+        <p>Collections</p>
+        <p>Men</p>
+        <p>Women</p>
+        <p>About</p>
+        <p>Contact</p>
+      </div>
+    </div>
+    <div class="container-cart-avatar">
+      <div class="cart-container">
+        <div class="cart">
+        <div class="dynamic-quantity cart-img"></div>
+        <img src="./images/icon-cart.svg" alt="" class="cart-img">
+      </div>
+        <div class="cart-item-view">
+          <div class="cart-item-header">Cart</div>
+          <div class="cart-item-placeholder">
+            <div class="empty">Your cart is empty.</div>
+          </div>
+<!--
+            <div class="item-in-cart-container">
+
+              <div class="item-in-cart">
+                <img src="./images/image-product-1-thumbnail.jpg" alt="" class="item-cart-img">
+                <div class="cart-item-details">
+                  <div class="item-name">Fall Limited Edition Sneakers</div>
+                  <div class="item-deets-container">
+                    <div class="item-price">$125.00</div>
+                    <div class="item-quantity">x 4</div>
+                    <div class="item-total-price">$500.00</div>
+                  </div>     
+                </div>
+                <img src="./images/icon-delete.svg" alt="" class="delete-item">
+              </div>
+            
+              <button class="chkout-button">Checkout</button>
+              
+              
+
+            </div>-->
+
+        </div>
+      </div>
+      <div class="avatar"><img src="./images/image-avatar.png" alt=""></div>
+    </div>
+  </header>
+  <main>
+    <div class="container-product">
+      <div class="product-images">
+        <div class="current-img">
+          <button class="prev-m prev-next mobile-prev-next-button prev-action"><img src="./images/icon-previous.svg" alt=""></button>
+          <img src="./images/image-product-1.jpg" alt="" class="display-img current-img-sync " data-value="1">
+          <button class="next-m prev-next mobile-prev-next-button next-action"><img src="./images/icon-next.svg" alt=""></button>
+        </div>
+        <div class="thumbnail-img">
+
+          <div class="img-container active" aria-checked="true" data-value="1"><img src="./images/image-product-1-thumbnail.jpg" alt="" class="img"></div>
+          <div class="img-container" aria-checked="false" data-value="2"><img src="./images/image-product-2-thumbnail.jpg" alt="" class="img"></div>
+          <div class="img-container" aria-checked="false" data-value="3"><img src="./images/image-product-3-thumbnail.jpg" alt="" class="img"></div>
+          <div class="img-container" aria-checked="false" data-value="4"><img src="./images/image-product-4-thumbnail.jpg" alt="" class="img"></div>
+        </div>
+      </div>
+      <div class="product-description">
+        <div class="brand-item-name-container">
+          <p class="brand-name">Sneaker Company</p>
+          <h1>Fall Limited Edition Sneakers</h1>
+        </div>
+        <p class="description">
+          These low-profile sneakers are your perfect casual wear companion. Featuring a 
+          durable rubber outer sole, they’ll withstand everything the weather can offer.
+        </p>
+        <div class="price">
+          <div class="discounted-price">
+            <div class="current-price">$125.00</div>
+            <div>
+            <button class="discount-percentage">50%</button>
+            </div>
+          </div>
+          <div class="original-price">$250.00</div>
+        </div>
+        <div class="container-add-to-cart">
+          <div class="quantity-button">
+            <button class="minus"><img src="./images/icon-minus.svg" alt=""></button>
+            <input type="number" class="quantity-value" value = "1" data-productid="1" min="1">
+            <button class="plus"><img src="./images/icon-plus.svg" alt=""></button>
+          </div>
+          <button class="addtocart-button"><img src="./images/icon-cart.svg" alt="">Add to cart</button>
+          
+        </div>
+      </div>
+    </div>
+  </main>
+
+ </div> 
+    <div class="lightbox-container">
+      <div class="backdrop"></div>
+        <div class="lightbox">
+          <img src="./images/icon-close.svg" alt="" class="close-button close-action">
+          <div class="current-img l">
+            <button class="previous prev-action"><img src="./images/icon-previous.svg" alt="" class="prev-img"></button>
+            <img src="./images/image-product-1.jpg" alt="" class="on-lightbox current-img-sync" data-value="1">
+            <button class="next next-action"><img src="./images/icon-next.svg" alt=""></button>
+          </div>
+          <div class="thumbnail-img thumbnail-lightbox">
+            <div class="img-container active" aria-checked="true" data-value="1"><img src="./images/image-product-1-thumbnail.jpg" alt="" class="img"></div>
+            <div class="img-container" aria-checked="false" data-value="2"><img src="./images/image-product-2-thumbnail.jpg" alt="" class="img"></div>
+            <div class="img-container" aria-checked="false" data-value="3"><img src="./images/image-product-3-thumbnail.jpg" alt="" class="img"></div>
+            <div class="img-container" aria-checked="false" data-value="4"><img src="./images/image-product-4-thumbnail.jpg" alt="" class="img"></div>
+          </div>
+        </div>
+      
+    </div>
+    <div class="mobile-menu-container">
+      <div class="backdrop b-m-menu"></div>
+      <div class="mobile-menu-items">
+        <img src="./images/icon-close.svg" alt="" class="m-menu-close-button close-action">
+        <div class="mobile-menu">
+          <p>Collections</p>
+          <p>Men</p>
+          <p>Women</p>
+          <p>About</p>
+          <p>Contact</p>
+        </div>
+      </div>
+    </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Aimin</a>.
+  </div>
+  <script src="./index.js"></script>
+</body>
+</html>
